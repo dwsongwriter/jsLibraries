@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-content: center;
+    height: 100vh;
+    margin: 2em;
+    padding: 0;
+    background-image: linear-gradient(#C6D8D3, #636d6a);
+    color: #E7FCF6;
+    text-shadow: 4px 4px 5px #636d6a;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+}
