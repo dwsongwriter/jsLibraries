@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Examples</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+	<body>
+	    <div id = "button-box">
+	        Here is your new button:
+	    </div>
+	    <script>
+	        alert("We are going to build a button!");
+	        var text = prompt("What would you like your button to say?");
+	        var button = document.createElement("button");
+	        //assign newly created button text to user prompt text
+	        button.innerHTML = text;
+	        //add button to the end of the button-box div.
+	        document.getElementById("button-box").appendChild(button);
+	    </script>
+	</body>
+</html>

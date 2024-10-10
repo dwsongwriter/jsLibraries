@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Examples</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <style type="text/css">
+            .footNote{
+                font-size: 7px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>
+        My essay on Frankenstein
+      </h2>
+        <p id = "essay">
+            The central theme of Mary Shelley's Frankenstein is clearly laid out in the first few pages of the text(1).
+        </p>
+    </body>
+    <script>
+        
+        var footNote = document.createElement("p");
+        footNote.innerHTML = "1. From page 5 of <i>Frankenstein</i>";
+        //We can set attributes directly by using the style attribute
+        footNote.setAttribute("style", "font-size: 7px");
+        document.body.appendChild(footNote);
+        
+        var footNote2 = document.createElement("p");
+        footNote2.innerHTML = "2. From page 4 of Frankenstein";
+        //Or we can set the attribute to the footnote class
+        //written in the style tag.
+        footNote2.setAttribute("class","footNote");
+        document.body.appendChild(footNote2);
+    </script>
+
+
+</html>
