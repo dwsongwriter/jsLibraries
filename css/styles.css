@@ -16,3 +16,8 @@ h1 {
     text-align: center;
     font-size: 5em;
 }
+
+button {
+    padding: 50px 25px;
+    max-width: 350px;
+}
